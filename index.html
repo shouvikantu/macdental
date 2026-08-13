@@ -3,136 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>McMinnville Dental Group | Dentistry for the long run</title>
+<title>McMinnville Dental Group | Led by Dr. Justin Walter</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
 </head>
-<body>
-<div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow-x:hidden">
+<body style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow-x:hidden;margin:0;display:flex;flex-direction:column;min-height:100vh">
 
-  <header style="position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--color-bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)">
-    <div style="max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:28px;flex-wrap:wrap">
-      <a href="#top" style="display:block;flex:none"><img src="uploads/McMinnville_Logo.png" alt="McMinnville Dental Group" style="height:46px;width:auto"></a>
-      <nav style="margin-left:auto;display:flex;align-items:center;gap:22px;font-size:14px">
-        <a href="#care" style="text-decoration:none;color:var(--color-text)">Care</a>
-        <a href="#visit" style="text-decoration:none;color:var(--color-text)">Visit</a>
-        <a class="btn btn-primary" href="#new-patient" style="text-decoration:none">New patient</a>
-      </nav>
+  <!-- Header -->
+  <header style="position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--color-bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--color-text) 5%,transparent)">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(20px,4vw,24px) 24px;display:flex;align-items:center;justify-content:space-between">
+      <a href="#" style="display:block"><img src="uploads/McMinnville_Logo.png" alt="McMinnville Dental Group" style="height:clamp(46px,6vw,54px);width:auto"></a>
+      <a href="tel:+15034722181" class="btn btn-primary" style="text-decoration:none;font-size:16px;padding:12px 24px">Call Us</a>
     </div>
   </header>
 
-  <section id="top" style="max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,72px) 24px clamp(40px,6vw,88px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px);align-items:center">
-    <div style="flex:1 1 340px;min-width:280px">
-      <span class="tag tag-accent-2" style="margin-bottom:20px">Accepting new patients</span>
-      <h1 style="font-size:clamp(38px,5.4vw,62px);line-height:1.04;margin:14px 0 18px;max-width:15ch">Dentistry for the long run.</h1>
-      <p style="font-size:clamp(16px,1.5vw,19px);line-height:1.6;max-width:44ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Led by Dr. Justin Walter, we are one practice in McMinnville for everything teeth related — from cleanings to crowns. Unhurried appointments, clear pricing, and a plan you understand before we start.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
-        <a class="btn btn-primary" href="#new-patient" style="text-decoration:none;padding:13px 26px;font-size:15px">Become a patient</a>
-        <a class="btn btn-secondary" href="tel:+15034722181" style="text-decoration:none;padding:13px 26px;font-size:15px">503-472-2181</a>
-      </div>
-    </div>
-    <div style="flex:1 1 320px;min-width:280px;position:relative">
-      <div style="position:absolute;right:-8%;top:-12%;width:62%;aspect-ratio:1;border-radius:999px;background:var(--color-accent-2-200);z-index:0"></div>
-      <div style="position:relative;z-index:1;aspect-ratio:4/5;border-radius:calc(var(--radius-lg) * 1.6);background:var(--color-accent-2-100);border:1px dashed var(--color-accent-300);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:24px;overflow:hidden">
-        <!-- The user will add their image here later. Leaving it as a clean empty placeholder block. -->
-      </div>
-    </div>
-  </section>
-
-  <section id="care" style="background:var(--color-accent-100)">
-    <div style="max-width:1180px;margin:0 auto;padding:clamp(44px,6vw,84px) 24px">
-      <h2 style="font-size:clamp(28px,3.4vw,40px);margin:0 0 10px">Everything teeth related</h2>
-      <p style="max-width:52ch;font-size:16px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">A short list of what we see most. If what you need isn't here, call us — we almost certainly do it.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:32px">
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">01</span><span class="card-title">Cleanings &amp; exams</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">02</span><span class="card-title">Fillings &amp; crowns</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">03</span><span class="card-title">Root canals</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">04</span><span class="card-title">Extractions</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">05</span><span class="card-title">Implants &amp; bridges</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">06</span><span class="card-title">Whitening &amp; veneers</span></div>
-        <div class="card elev-sm" style="background:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker">07</span><span class="card-title">Kids' dentistry</span></div>
-        <div class="card elev-sm" style="background:var(--color-accent-700);color:var(--color-bg);padding:20px 22px;gap:4px"><span class="card-kicker" style="color:var(--color-accent-2-300)">08</span><span class="card-title">Something else? <a href="tel:+15034722181" style="color:var(--color-bg)">Ask us</a></span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="visit" style="max-width:1180px;margin:0 auto;padding:clamp(44px,6vw,84px) 24px;display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,72px)">
-    <div style="flex:1 1 300px;min-width:270px">
-      <h2 style="font-size:clamp(28px,3.4vw,40px);margin:0 0 24px">Hours</h2>
-      <table class="table" style="font-size:15px">
-        <tbody>
-          <tr><td style="padding-left:0">Monday</td><td style="text-align:right;padding-right:0">8 AM – 4 PM</td></tr>
-          <tr><td style="padding-left:0">Tuesday</td><td style="text-align:right;padding-right:0">8 AM – 4 PM</td></tr>
-          <tr><td style="padding-left:0">Wednesday</td><td style="text-align:right;padding-right:0">8 AM – 4 PM</td></tr>
-          <tr><td style="padding-left:0">Thursday</td><td style="text-align:right;padding-right:0">8 AM – 4 PM</td></tr>
-          <tr><td style="padding-left:0">Friday</td><td style="text-align:right;padding-right:0">8 AM – 4 PM</td></tr>
-          <tr><td style="padding-left:0;opacity:.5">Saturday</td><td style="text-align:right;padding-right:0;opacity:.5">Closed</td></tr>
-          <tr><td style="padding-left:0;opacity:.5">Sunday</td><td style="text-align:right;padding-right:0;opacity:.5">Closed</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="flex:1 1 300px;min-width:270px">
-      <h2 style="font-size:clamp(28px,3.4vw,40px);margin:0 0 24px">Find us</h2>
-      <p style="font-size:18px;line-height:1.5;margin:0 0 6px">2550 NE McDonald Ln<br>McMinnville, OR 97128</p>
-      <p style="margin:0 0 22px"><a href="tel:+15034722181" style="font-size:18px">503-472-2181</a></p>
-      <p style="font-size:15px;color:color-mix(in srgb,var(--color-text) 70%,transparent);max-width:36ch">Free parking on site. Walk-ins for dental pain are seen the same day whenever we can fit you in.</p>
-      <a class="btn btn-secondary" href="#map" style="text-decoration:none;margin-top:6px">Get directions</a>
-    </div>
-  </section>
-
-
-
-  <section id="new-patient" style="max-width:1180px;margin:0 auto;padding:clamp(44px,6vw,88px) 24px;display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px)">
-    <div style="flex:1 1 280px;min-width:260px">
-      <h2 style="font-size:clamp(28px,3.4vw,40px);margin:0 0 14px">New patients start here</h2>
-      <p style="font-size:16px;line-height:1.6;max-width:38ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Five fields. We call you back within one business day to confirm a time and go over insurance.</p>
-      <div style="margin-top:26px;display:flex;flex-direction:column;gap:10px;font-size:14px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">
-        <span>Most PPO plans accepted</span>
-        <span>Payment plans available</span>
-        <span>In pain today? Call <a href="tel:+15034722181" style="color:inherit">503-472-2181</a></span>
-      </div>
-    </div>
-    <form id="new-patient-form" style="flex:1 1 380px;min-width:280px;background:var(--color-accent-100);border-radius:calc(var(--radius-lg) * 1.3);padding:clamp(22px,3vw,34px);box-shadow:var(--shadow-md)">
-      <div id="np-form-success" style="display:none;min-height:340px;flex-direction:column;justify-content:center;gap:12px;text-align:center;padding:20px">
-        <span style="font-family:var(--font-heading);font-size:26px;color:var(--color-accent-700)">Thank you.</span>
-        <span style="font-size:15px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">We'll call you within one business day at the number you gave us.</span>
-      </div>
-      <div id="np-form-content" style="display:flex;flex-direction:column;gap:16px">
-        <div class="field"><label for="np-name">Full name</label><input class="input" id="np-name" required style="background:var(--color-bg);min-height:46px" placeholder="Jamie Rivera"></div>
-        <div style="display:flex;flex-wrap:wrap;gap:16px">
-          <div class="field" style="flex:1 1 150px;margin-bottom:0"><label for="np-phone">Phone</label><input class="input" id="np-phone" type="tel" required style="background:var(--color-bg);min-height:46px" placeholder="503-000-0000"></div>
-          <div class="field" style="flex:1 1 150px;margin-bottom:0"><label for="np-email">Email</label><input class="input" id="np-email" type="email" required style="background:var(--color-bg);min-height:46px" placeholder="you@email.com"></div>
-        </div>
-        <div class="field"><label for="np-reason">Reason for visit</label><input class="input" id="np-reason" required style="background:var(--color-bg);min-height:46px" placeholder="Cleaning, toothache, second opinion…"></div>
-        <div class="field"><label>Best time to reach you</label>
-          <div class="seg" style="background:var(--color-bg)">
-            <label class="seg-opt"><input type="radio" name="np-time" checked>Morning</label>
-            <label class="seg-opt"><input type="radio" name="np-time">Afternoon</label>
-            <label class="seg-opt"><input type="radio" name="np-time">Either</label>
+  <main style="flex:1;background:var(--color-accent-100)">
+    <div class="bento-grid">
+      
+      <!-- Hero / Brand Card -->
+      <div class="bento-card bento-hero" style="background:var(--color-bg);justify-content:center;align-items:center;text-align:center;gap:32px">
+        
+        <img src="uploads/emblem.png" alt="McMinnville Family Dental Emblem" style="width:clamp(100px, 15vw, 160px);height:auto;filter:drop-shadow(0 12px 24px rgba(47,62,133,0.15))">
+        
+        <div style="display:flex;flex-direction:column;align-items:center;gap:16px;position:relative;z-index:1">
+          <h1 style="font-size:clamp(32px,5vw,64px);line-height:1.1;margin:0;font-family:var(--font-heading);background:linear-gradient(135deg, var(--color-accent-900) 0%, var(--color-accent-500) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-wrap:balance">McMinnville Family Dental</h1>
+          
+          <div style="display:flex;align-items:center;gap:16px">
+            <div style="height:2px;width:clamp(30px, 5vw, 60px);background:var(--color-accent-200);border-radius:2px"></div>
+            <span style="font-family:var(--font-body);font-weight:700;font-size:clamp(16px, 2.5vw, 22px);color:var(--color-accent-700);text-transform:uppercase;letter-spacing:2px">Dr. Justin Walter</span>
+            <div style="height:2px;width:clamp(30px, 5vw, 60px);background:var(--color-accent-200);border-radius:2px"></div>
           </div>
         </div>
-        <button class="btn btn-primary btn-block" type="submit" style="min-height:50px;font-size:16px;margin-top:8px">Request an appointment</button>
-        <span style="font-size:12px;text-align:center;color:color-mix(in srgb,var(--color-text) 55%,transparent)">We only use this to contact you about your visit.</span>
       </div>
-    </form>
-  </section>
 
-  <footer id="map" style="background:var(--color-accent-700);color:var(--color-bg)">
-    <div style="max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 24px;display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,56px);align-items:flex-start">
-      <div style="flex:1 1 260px;min-width:240px">
-        <img src="uploads/McMinnville_Logo.png" alt="McMinnville Dental Group" style="height:56px;width:auto;background:var(--color-bg);border-radius:var(--radius-md);padding:8px 12px">
-        <p style="margin:22px 0 4px;font-size:15px;line-height:1.6;opacity:.85">2550 NE McDonald Ln<br>McMinnville, OR 97128</p>
-        <p style="margin:0;font-size:15px"><a href="tel:+15034722181" style="color:var(--color-accent-2-300)">503-472-2181</a></p>
-        <p style="margin:22px 0 0;font-size:13px;opacity:.6">Mon–Fri, 8 AM – 4 PM</p>
-      </div>
-      <div style="flex:2 1 380px;min-width:280px;aspect-ratio:16/9;border-radius:calc(var(--radius-lg) * 1.2);background:var(--color-accent-800);display:flex;flex-direction:column;overflow:hidden">
+      <!-- Map Card -->
+      <div class="bento-card bento-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.778841253457!2d-123.19796032338902!3d45.22818787123992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549543e49e25d2e7%3A0xb35a0f5a706be22c!2s2550%20NE%20McDonald%20Ln%2C%20McMinnville%2C%20OR%2097128!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+
+      <!-- Contact & Location Card -->
+      <div class="bento-card bento-contact">
+        <div style="width:56px;height:56px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:24px">
+          📍
+        </div>
+        <h3 style="margin:0 0 16px;font-size:22px;font-family:var(--font-heading)">Location & Contact</h3>
+        <p style="font-size:18px;font-weight:600;line-height:1.5;margin:0 0 24px;color:var(--color-text)">2550 NE McDonald Ln<br>McMinnville, OR 97128</p>
+        <a href="tel:+15034722181" style="font-size:28px;font-weight:700;color:var(--color-accent-700);text-decoration:none;margin-top:auto">503-472-2181</a>
+      </div>
+
+      <!-- Hours Card -->
+      <div class="bento-card bento-hours">
+        <div style="width:56px;height:56px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:24px">
+          🕒
+        </div>
+        <h3 style="margin:0 0 16px;font-size:22px;font-family:var(--font-heading)">Hours</h3>
+        <div style="margin-top:auto;width:100%;font-size:18px">
+          <div style="display:flex;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid color-mix(in srgb,var(--color-text) 10%,transparent);margin-bottom:16px">
+            <span style="font-weight:600">Mon - Fri</span>
+            <span>8:00 AM – 4:00 PM</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;opacity:0.5">
+            <span style="font-weight:600">Sat - Sun</span>
+            <span>Closed</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div style="border-top:1px solid color-mix(in srgb,var(--color-bg) 18%,transparent)">
-      <div style="max-width:1180px;margin:0 auto;padding:16px 24px;font-size:12px;opacity:.6">© 2026 McMinnville Dental Group</div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background:var(--color-accent-900);color:var(--color-bg);padding:40px 24px;text-align:center">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px">
+      <p style="font-size:14px;color:color-mix(in srgb,var(--color-bg) 60%,transparent);margin:0">© 2026 McMinnville Dental Group. All rights reserved.</p>
     </div>
   </footer>
-</div>
+
 </body>
 </html>
