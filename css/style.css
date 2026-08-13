@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --color-accent: #2f3e85; 
+  --color-accent-2: #8aaedc;
+  --color-accent-100: #eef1fb; 
+  --color-accent-200: #dbe2f6; 
+  --color-accent-300: #b9c5ea; 
+  --color-accent-400: #8b9cd6; 
+  --color-accent-500: #5568ae; 
+  --color-accent-600: #3b4d94; 
+  --color-accent-700: #2f3e85; 
+  --color-accent-800: #232d61; 
+  --color-accent-900: #171e42;
+  
+  --color-accent-2-100: #eff5fd; 
+  --color-accent-2-200: #dceafa; 
+  --color-accent-2-300: #c2d8f2; 
+  --color-accent-2-400: #a4c2e8; 
+  --color-accent-2-500: #8aaedc; 
+  --color-accent-2-600: #6b8fc2; 
+  --color-accent-2-700: #4f6f9f; 
+  --color-accent-2-800: #3a5276; 
+  --color-accent-2-900: #26364d;
+  
+  --color-bg: #ffffff;
+  --color-surface: #f3efe6;
+  --color-text: #201e1d;
+  
+  --font-body: 'Figtree', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Caprasimo', system-ui, -apple-system, serif;
+  
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent-700);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-accent-600);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: normal;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--color-accent-700);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--color-accent-800);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: var(--color-accent-2-200);
+  color: var(--color-accent-800);
+}
+.btn-secondary:hover {
+  background: var(--color-accent-2-300);
+  transform: translateY(-1px);
+}
+.btn-block {
+  width: 100%;
+}
+
+/* Tags */
+.tag {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag-accent-2 {
+  background: var(--color-accent-2-200);
+  color: var(--color-accent-800);
+}
+
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.elev-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.card-kicker {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  opacity: 0.7;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td {
+  padding: 14px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Forms */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.input {
+  border: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input:focus {
+  border-color: var(--color-accent-500);
+  box-shadow: 0 0 0 3px var(--color-accent-200);
+}
+
+/* Segmented Control */
+.seg {
+  display: flex;
+  border-radius: var(--radius-md);
+  padding: 4px;
+  border: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+}
+.seg-opt {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: calc(var(--radius-md) - 4px);
+  position: relative;
+  transition: all 0.2s ease;
+}
+.seg-opt input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.seg-opt:has(input:checked) {
+  background: var(--color-accent-100);
+  font-weight: 700;
+  color: var(--color-accent-700);
+}
